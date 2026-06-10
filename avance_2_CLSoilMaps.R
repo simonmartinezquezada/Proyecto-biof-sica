@@ -81,7 +81,7 @@ guardar_panel_rasters <- function(lista_rasters, horizontes, archivo_salida, tit
   par(mfrow = c(nrow_panel, ncol_panel), mar = c(3.2, 3.2, 3, 4.5), oma = c(1, 1, 1, 1))
   for (hz in horizontes) {
     r_actual <- lista_rasters[[hz]]
-    plot(r_actual, main = paste(titulo_base, hz, "cm"), col = paleta, zlim = zlim, axes = TRUE)
+    plot(r_actual, main = paste(titulo_base, hz, "cm"), col = paleta, range = zlim, axes = TRUE) #range en lugar de zlim: fuerza tanto el mapeo de colores como los límites de la leyenda al rango global común
     plot(vect(st_transform(polygon, crs(r_actual))), add = TRUE, border = "black", lwd = 1)
 
     # FLECHA NORTE (opcional, activar con agregar_norte = TRUE)
