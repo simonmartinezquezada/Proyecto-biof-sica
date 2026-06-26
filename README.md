@@ -4,9 +4,9 @@ Trabajo grupal para asignatura de ICH3600 Biofísica Ambiental, Pontificia Unive
 
 ## Contenido del repositorio
 
-- `avance_2_CLSoilMaps`: script que genera los paneles de las propiedades hidráulicas del suelo.
-- `avance_2_balance_final`: script con el balance en un pixel, almacenamiento en el día 365 y días bajo estrés hídrico.
-- `trabajo_final_hydrusv3`: script que genera un excel para el input de Hydrus, después procesa el output de Hydrus y genera el svg.
+- `avance_1`: script que genera los paneles de las propiedades hidráulicas del suelo.
+- `avance_2`: script con el balance en un pixel, almacenamiento en el día 365 y días bajo estrés hídrico.
+- `trabajo_final_hydrus`: script que genera un excel para el input de Hydrus, después procesa el output de Hydrus y genera el svg.
 - `datos_INIA`: datos agrometereológicos de las estación Las Puentes, Arauco desde 01-05-2020 hasta 01-05-2026.
 - `Hydrus_Avance_final.h1d`: archivo de setup para Hydrus.
 - `figuras/`: carpeta donde se guardan los gráficos generados (incluye el svg comparación S_discreto y S_hydrus)
@@ -15,9 +15,10 @@ Trabajo grupal para asignatura de ICH3600 Biofísica Ambiental, Pontificia Unive
 - `Hydrus_Avance_final/`: carpeta donde se guardan los archivos de output de Hydrus
 
 ## Carpetas y archivos que deben estar al momento de ejecutar
-- `CLDynamicLandCover_2018_1.0`: Tif de coberturas, clave para el avance 2.
-- `ROSETTA_MEAN/`: Carpeta que debe contener los Ráster con propiedades hidráulicas
-- `SoilMaps_MEAN/`: Carpeta que debe contener los Ráster con propiedades texturales
+- `DEM.Chile.Continental`: Tif de elevaciones para el avance 1.
+- `CLDynamicLandCover_2018_1.0`: Tif de coberturas, clave para el avance 1, 2 y final.
+- `ROSETTA_MEAN/`: Carpeta que debe contener los Ráster con propiedades hidráulicas avance 1, 2 y final.
+- `SoilMaps_MEAN/`: Carpeta que debe contener los Ráster con propiedades texturales avance 1 y final.
 
 - En la carpeta "maestra" debe estar los scripts, datos_INIA.xlsx, CLDynamicLandCover_2018_1.0 y carpetas "figuras", "ROSETTA_MEAN" 
 
